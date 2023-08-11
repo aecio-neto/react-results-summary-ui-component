@@ -1,55 +1,63 @@
 import './App.css';
+import memory from './assets/images/icon-memory.svg'
+import reaction from './assets/images/icon-reaction.svg'
+import verbal from './assets/images/icon-verbal.svg'
+import visual from './assets/images/icon-visual.svg'
+import Button from './components/Button'
 
 function App() {
+  // Próximos passos
+  // Espaçar as letras do item-score
 
   return (
-    <div className="App flex justify-center items-center h-screen">
-      <div className='summary-container w-1/2 flex flex-row'>
-        
-        <div className="result-container bg-red-100 rounded-3xl p-4 text-center w-1/2 z-10">  
+    <div className="App flex font-primary justify-center items-center h-screen">
+      <div className='summary-container md:flex md:grid md:grid-cols-2 md:max-w-2xl'>   
+        <div className="result-container bg-gradient-to-b from-LightSlateBlue to-LightRoyalBlue rounded-b-3xl md:rounded-3xl p-6 text-center z-10">
           <div className="result-score">
-            <h1 className='text-xl font-bold m-4'>Seu Resultado</h1>
-            <div className="inline-block rounded-full bg-gray-100 p-8 m-4">
-              <p>76 <br /><span>de 100</span></p>
+            <h1 className='text-xl font-bold m-2 text-LightLavender'>Seu Resultado</h1>
+            <div className="inline-block rounded-full bg-gradient-to-b from-VioletBlue to-PersianBlue px-12 py-10 m-4">
+              <p className='text-6xl font-bold text-White'>76</p>
+              <p className='text-LightLavender'>de 100</p>
             </div>
           </div>
           
-          <div className="result-message m-4">
-            <p className='text-3xl m-4'>Ótimo</p>
-            <p className='px-8'>Seu resultado foi maior que 65% das pessoas que fizeram esse teste.</p>
+          <div className="result-message m-4 items-center">
+            <p className='text-3xl font-bold m-2 text-White'>Ótimo</p>
+            <p className='text-LightLavender'>Seu resultado foi maior que 65% das pessoas que fizeram esse teste.</p>
           </div>
         </div>
 
-        <div className="summary-container bg-gray-100 rounded-2xl p-4 w-1/2 text-center z-0 ml-[-30px]">
-          <div className="summary-table">
-            <h2>Summary</h2>
-            <p>imagem abaixo</p>
-            <img src="favicon-32x32.png" alt="" />
+        <div className="summary-container shadow-xl rounded-b-2xl py-10 pb-4 z-0 md:ml-[-30px]">
+          <div className="summary-table px-8 md:pl-[4rem]">
+            <h2 className='text-xl'>Resumo</h2>
             <ul>
-              <li>
-                <div>
-                  <img src="./assets/images/icon-memory.svg" alt="" />Reação <span>80/100</span>
+              <li className='flex items-center rounded-lg bg-LightRed-light text-LightRed-dark p-3 my-4 justify-between'>
+                <div className='flex items-center'>
+                  <img src={memory} className='mr-2' alt="" />Reação
                 </div>
+                <p>80<span className='text-DarkGrayBlue'>/100</span></p>
               </li>
-                <li>
-                  <div>
-                    <img src="assets/images/icon-memory.svg" alt="" />Memória <span>92/100</span>
+                <li className='flex items-center rounded-lg bg-OrangeyYellow-light text-OrangeyYellow-dark p-3 my-4 justify-between'>
+                  <div className='flex items-center'>
+                    <img src={reaction} className='mr-2' alt="" />Memória 
                   </div>
+                  <p>92<span className='text-DarkGrayBlue'>/100</span></p>
                 </li>
-                <li>
-                  <div>
-                    <img src="./assets/images/icon-memory.svg" alt="" />Verbal <span>61/100</span>
+                <li className='flex items-center rounded-lg bg-GreenTeal-light text-GreenTeal-dark p-3 my-4 flex justify-between'>
+                  <div className='flex items-center'>
+                    <img src={verbal} className='mr-2' alt="" />Verbal
                   </div>
+                  <p>61<span className='text-DarkGrayBlue'>/100</span></p>
                 </li>
-                <li>
-                  <div>
-                    <img src="./assets/images/icon-memory.svg" alt="" />Visual <span>72/100</span>
-                  </div>            
+                <li className='flex items-center rounded-lg bg-CobaltBlue-light text-CobaltBlue-dark p-3 my-4 flex justify-between'>
+                  <div className='flex items-center'>
+                    <img src={visual} className='mr-2' alt="" />Visual
+                  </div>  
+                  <p>72<span className='text-DarkGrayBlue'>/100</span></p>
                 </li>
             </ul>
+          < Button />
           </div>
-          
-          <button>Continuar</button>
         </div>
       </div>
     </div>
