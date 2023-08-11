@@ -11,9 +11,9 @@ function App() {
 
   return (
     <div className="App flex font-primary justify-center items-center h-screen">
-      <div className='summary-container md:flex md:grid md:grid-cols-2 md:max-w-2xl'>   
-        <div className="result-container bg-gradient-to-b from-LightSlateBlue to-LightRoyalBlue rounded-b-3xl md:rounded-3xl p-6 text-center z-10">
-          <div className="result-score">
+      <div className='summary-container mt-4 md:grid md:grid-cols-2 md:max-w-2xl'>   
+        <div className="result-container bg-gradient-to-b from-LightSlateBlue to-LightRoyalBlue rounded-b-3xl md:rounded-3xl py-4 text-center sm:z-10">
+          <div className="result-score mt-10 md:mt-6">
             <h1 className='text-xl font-bold m-2 text-LightLavender'>Seu Resultado</h1>
             <div className="inline-block rounded-full bg-gradient-to-b from-VioletBlue to-PersianBlue px-12 py-10 m-4">
               <p className='text-6xl font-bold text-White'>76</p>
@@ -27,7 +27,7 @@ function App() {
           </div>
         </div>
 
-        <div className="summary-container shadow-xl rounded-b-2xl py-10 pb-4 z-0 md:ml-[-30px]">
+        <div className="summary-container shadow-xl rounded-b-2xl py-10 pb-4 sm:z-0 md:ml-[-30px]">
           <div className="summary-table px-8 md:pl-[4rem]">
             <h2 className='text-xl'>Resumo</h2>
             <ul>
