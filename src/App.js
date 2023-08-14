@@ -1,5 +1,5 @@
-import './App.css';
-// import { useState } from 'react';
+import './App.css'
+// import { useState } from 'react'
 import memory from './assets/images/icon-memory.svg'
 import reaction from './assets/images/icon-reaction.svg'
 import verbal from './assets/images/icon-verbal.svg'
@@ -48,28 +48,38 @@ const ResultCard = () => {
   )
 }
 
-const CustomListItem = ({ backgroundColor, category, text, score }) => {
-  // provavelmente terá um map para incluir os itens, será preciso criar uma id.
+const CustomListItem = ({ colorVariant, category, text, score }) => {
+  const bgColor = {
+    red: 'bg-LightRed-light',
+    yellow: 'bg-OrangeyYellow-light',
+    green: 'bg-GreenTeal-light',
+    blue: 'bg-CobaltBlue-light',
+  }
 
+  const textColor = {
+    red: 'text-LightRed-dark',
+    yellow: 'text-OrangeyYellow-dark',
+    green: 'text-GreenTeal-dark',
+    blue: 'text-CobaltBlue-dark',
+  }
 
   return (
-    <li className={`flex items-center rounded-lg bg-${backgroundColor}-light text-${backgroundColor}-dark p-3 my-4 justify-between`}>
+    <li className={`flex items-center rounded-lg ${bgColor[colorVariant]} ${textColor[colorVariant]} p-3 my-4 justify-between`}>
       <div className='flex items-center'>
-        <img src={scores.category} className='mr-2' alt="" />{text}
+        <img src={category} className='mr-2' alt="" />{text}
       </div>
       <p>{score}<span className='text-DarkGrayBlue'>/100</span></p>
     </li>
-  );
-};
+  )
+}
 
 const SummaryTable = () => {
   return (
     <ul>
-      {/* CustomListItem = ({ backgroundColor, category, text, score }) */}
-      <CustomListItem backgroundColor="LightRed" category={reaction} text="Reação" score={80} />
-      <CustomListItem backgroundColor="OrangeyYellow" category={memory} text="Memória" score={92} />
-      <CustomListItem backgroundColor="GreenTeal" category={verbal} text="Verbal" score={61} />
-      <CustomListItem backgroundColor="CobaltBlue" category={visual} text="Visual" score={72} />
+      <CustomListItem colorVariant="red" category={reaction} text="Reação" score={80} />
+      <CustomListItem colorVariant="yellow" category={memory} text="Memória" score={92} />
+      <CustomListItem colorVariant="green" category={verbal} text="Verbal" score={61} />
+      <CustomListItem colorVariant="blue" category={visual} text="Visual" score={72} />
     </ul>
   )
 }
@@ -96,12 +106,9 @@ function ResultsSummary() {
 }
 
 export default function App() {
-  // Próximos passos
-  // Espaçar as letras do item-score
-
   return (
     <div className="App flex font-primary justify-center items-center h-screen">
       <ResultsSummary />
     </div>
-  );
+  )
 }
