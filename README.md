@@ -1,13 +1,13 @@
 # Results Summary Component - React
 
-Minha solução do [Results Summary Component | Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). 
+O Results Summary Component é um componente que oferece uma visualização concisa e atrativa dos resultados de diversas categorias em um formato de sumário.
 
-[Versão ao Vivo](https://results-summary-react-component.netlify.app/)
-[Github](https://your-live-site-url.com)
+Meu objetivo com esse projeto era aprimorar minha capacidade de criar interfaces web atraentes e funcionais usando práticas de design responsivo e desenvolvimento web moderno. Abaixo você pode conferir mais sobre o projeto.
+
+- [Versão ao Vivo](https://results-summary-react-component.netlify.app/)
 
 ### Construído com
 
-- Marcação HTML5 semântica
 - Propriedades personalizadas de CSS
 - Grid CSS
 - Fluxo de trabalho Mobile-first
@@ -46,12 +46,11 @@ Esse é o primeiro de muitos projetos com React. O plano é seguir estudando e c
 
 ### Recursos úteis
 
- - https://youtu.be/PuovsjZN11Y
 - [The BEST Way to Create Responsive Design with Tailwind CSS](https://youtu.be/PuovsjZN11Y) - Isso me ajudou a entender o por que desenvolver a versão mobile primeiro quando estamos utilizando Tailwind. Video claro e objetivo. 
 
 - [Thinking in react](https://react.dev/learn/thinking-in-react) - A documentação do react é uma das melhores que vi por aí. E esse artigo me ajudou a estruturar meu desenvolvimento. 
 
 ## Autor
 
-[Linkedin](https://linkedin.com/in/aecio-neto)
-[Site Pessoal (desatualizado)](https://www.aecioneto.com.br)
+- [Linkedin](https://linkedin.com/in/aecio-neto)
+- [Site Pessoal (desatualizado)](https://www.aecioneto.com.br)

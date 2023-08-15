@@ -5,7 +5,7 @@ const ResultCard = ({ scores }) => {
 
   return (
     <div className="result-container bg-gradient-to-b from-LightSlateBlue to-LightRoyalBlue rounded-b-3xl md:rounded-3xl py-4 text-center sm:z-10">
-      <div className="result-score mt-10 md:mt-6">
+      <div className="result-score mt-[8rem] md:mt-4">
         <h1 className='text-xl font-bold m-2 text-LightLavender'>Seu Resultado</h1>
         <div className="inline-block rounded-full bg-gradient-to-b from-VioletBlue to-PersianBlue px-12 py-10 m-4">
           <p className='text-6xl font-bold text-White'>{averageScore}</p>
